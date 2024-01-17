@@ -14,7 +14,7 @@ function CategoryItem({category,selectedCategory=null}) {
         width={35}
         height={35}
         />
-        <h2 className='text-[12px]
+        <h2 className='text-[18px]
         text-purple-700 line-clamp-1'>{category.name}</h2>
     </div>
   )

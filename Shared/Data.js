@@ -1,15 +1,15 @@
 const CategoryListData=[
     {
         id:1,
-        name:'Gas Station',
+        name:'Cleaning',
         value:'gas_station',
-        icon:'/gas.png'
+        icon:'/cleaning-service-1-973977.webp'
     },
     {
         id:2,
-        name:'Restaurants',
+        name:'Painting',
         value:'restaurant',
-        icon:'/food.png'
+        icon:'/paint.png'
     },
     {
         id:3,
