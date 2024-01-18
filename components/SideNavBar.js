@@ -20,7 +20,7 @@ function SideNavBar() {
 
   return (
     <div className={`p-2 items-center flex flex-col 
-    w-[80px] space-y-4 shadow-md shadow-blue-700
+    w-[80px] space-y-4 shadow-md shadow-purple-400
     h-screen sticky top-0 bg-white z-20 `}>
         <Image src='/logo.png'
         alt='logo'
