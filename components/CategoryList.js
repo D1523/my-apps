@@ -12,7 +12,7 @@ function CategoryList({setSelectedCategory}) {
     return (
     <div>
         <h2 className='text-[20px] mt-3 
-        font-bold mb-3'>Select Your Fav Category</h2>
+        font-bold mb-3'>Select Your Facilities Category</h2>
        {category? <div className='flex gap-6 mb-5'>
             {category?.map((item,index)=>(
                 <div key={index} onClick={()=>{setSelectedCategory(item.value);setSelectedCategory_(item)}}>

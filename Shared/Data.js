@@ -1,18 +1,30 @@
 const CategoryListData=[
     {
         id:1,
-        name:'Gas Station',
+        name:'Cleaning',
         value:'gas_station',
-        icon:'/gas.png'
+        icon:'/cleaning.png'
     },
     {
         id:2,
-        name:'Restaurants',
+        name:'Painting',
         value:'restaurant',
-        icon:'/food.png'
+        icon:'/paint.png'
     },
     {
         id:3,
+        name:'Cafe',
+        value:'cafe',
+        icon:'/cafe.png'
+    },
+    {
+        id:4,
+        name:'Cafe',
+        value:'cafe',
+        icon:'/cafe.png'
+    },
+    {
+        id:4,
         name:'Cafe',
         value:'cafe',
         icon:'/cafe.png'

@@ -1,3 +1,4 @@
+"use client"
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import React, { useContext } from 'react'
 import { UserLocationContext } from '../context/UserLocationContext';

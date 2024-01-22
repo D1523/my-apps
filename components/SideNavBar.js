@@ -24,7 +24,7 @@ function SideNavBar() {
     h-screen sticky top-0 bg-white z-20 `}>
         <Image src='/logo.png'
         alt='logo'
-        width={50}
+        width={70}
         height={50} />
 
         {menu.map((item,index)=>(

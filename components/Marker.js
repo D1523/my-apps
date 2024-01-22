@@ -1,3 +1,4 @@
+"use client"
 import { InfoBox, MarkerF } from "@react-google-maps/api";
 import React, { useContext } from "react";
 import { BusinessListContext } from "../context/BusinessListContext";

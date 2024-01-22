@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import BusinessItem from "./BusinessItem";
 import ShimmerEffectItem from "./ShimmerEffectItem";
-import { SelectedBusinessContext } from "../context/SelectedBusinessContext";
 
-function BusinessList({businessListData}) {
+function BusinessList(businessListData) {
     const [count,setCount]=useState(0);
+    console.log("BusinessList" ,businessListData)
     const [loader,setLoader]=useState(true);
-    const {selectedBusiness,setSelectedBusiness}=useContext(SelectedBusinessContext)
     useEffect(()=>{
       setInterval(()=>{
         setLoader(false)
@@ -16,14 +16,14 @@ function BusinessList({businessListData}) {
     useEffect(()=>{
       setLoader(true);
       setCount(0);
-    },[businessListData])
+    },[])
 
     
   return (
     <div>
       <h2 className="text-[20px] mt-3 font-bold mb-3
        flex items-center justify-between">
-        Top Nearby Places
+        Top Nearby Facilities
       <span className="flex">
        {count>0? <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,24 +59,21 @@ function BusinessList({businessListData}) {
         </svg>
       </span>
       </h2>
-      {/* Business Item  */}
-   {!loader?  <div>
-        {businessListData.map((business,index)=>
-        index>=count&&index<count+3&&(
-          <div key={index} className={`cursor-pointer rounded-2xl
-          ${selectedBusiness.name==business.name?'bg-purple-50':null}`}
-          onClick={()=>setSelectedBusiness(business)}>
-            <BusinessItem business={business} />
-          </div>
-        ))}
+      <div>    
       
-      </div>:null}
-     {loader? [1,2,3].map((item,index)=>(
-       <ShimmerEffectItem key={index}/>
-     )):null}
+        
+            <BusinessItem />
+          
+      
     
       
-    </div>
+            
+            </div>
+          </div>
+        
+      
+  
+       
   );
 }
 
