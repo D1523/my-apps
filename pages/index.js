@@ -28,6 +28,7 @@ export default function Home() {
   }
   return (
     <div className="flex">
+      
       <SideNavBar />
 
       <div className="grid grid-cols-1
@@ -38,6 +39,7 @@ export default function Home() {
           <BusinessList businessListData={businessList} />
           </div>
         <div>Google MAP</div>
+        
       </div>
     </div>
   );
